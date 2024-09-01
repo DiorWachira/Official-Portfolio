@@ -391,3 +391,118 @@ section {
 ::-webkit-scrollbar-track {
     background-color: var(--bg-color);
 }
+
+.services {
+    background: var(--bg-color);
+    color: var(--text-color);
+    padding: 5rem 10%; /* Adjusted padding for better margins */
+}
+
+.services h2 {
+    margin-bottom: 5rem;
+    color: var(--text-color);
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem; /* Increased gap for better spacing */
+}
+
+.service-box {
+    background-color: var(--main-color);
+    height: auto;
+    border-radius: 2rem;
+    padding: 3rem;
+    border: 5px solid transparent;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.service-box:hover {
+    background: white;
+    color: black;
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+}
+
+.service-info h4 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.service-info p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+.testimonials {
+    background: var(--second-bg-color);
+    padding: 5rem 10%; /* Adjusted padding for better spacing */
+    color: var(--text-color);
+}
+
+.testimonials-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.testimonials .heading {
+    margin-bottom: 5rem;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem; /* Adjusted gap for better spacing */
+}
+
+.testimonial-item {
+    background-color: var(--bg-color);
+    padding: 2rem;
+    border-radius: 2rem;
+    border: 3px solid var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+    text-align: center;
+    transition: 0.4s ease-in-out;
+}
+
+.testimonial-item:hover {
+    transform: scale(1.05);
+}
+
+.testimonial-item img {
+    width: 12rem;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-item h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.rating i {
+    color: var(--main-color);
+    font-size: 2rem;
+}
+
+.testimonial-item p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+#star{
+    color: gold;
+    font-size: 2rem;
+}
