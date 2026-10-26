@@ -3,252 +3,592 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DIOR'S PORTFOLIO</title>
+    <title>Wachira Njoroge — Software &amp; Infrastructure Engineer</title>
+    <meta name="description" content="Wachira (Dior) Njoroge — final-year Computer Science student at Strathmore University. Full-stack products, enterprise networking (CCNA, KCB Bank Group) and applied machine learning. Nairobi, Kenya.">
+    <meta name="theme-color" content="#EEECE6">
+    <meta property="og:title" content="Wachira Njoroge — Software & Infrastructure Engineer">
+    <meta property="og:description" content="I configure the network, then build what runs on it. Full-stack, networking and applied ML — Nairobi, Kenya.">
+    <meta property="og:image" content="assets/img/portrait.jpg">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23141615'/%3E%3Crect x='7' y='9' width='18' height='14' fill='none' stroke='%23EEECE6' stroke-width='2'/%3E%3Crect x='11' y='13' width='10' height='6' fill='%23EEECE6'/%3E%3Ccircle cx='26' cy='6' r='3' fill='%2322A355'/%3E%3C/svg%3E">
+
+    <!-- Set the theme before first paint so there is no flash -->
+    <script>
+        try {
+            var saved = localStorage.getItem('theme');
+            if (saved === 'light' || saved === 'dark') document.documentElement.setAttribute('data-theme', saved);
+        } catch (e) {}
+        document.documentElement.classList.add('js');
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0,1;1,9..144,300..700,0,1&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header class="header">
-        <a href="#home" class="logo">Dior
-            <span>Wachira</span>
-        </a>
-        
-        <i class='bx bx-menu' id="menu-icon"></i>
+    <a class="skip" href="#work">Skip to work</a>
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#education">Education</a>
-            <a href="#services">Services</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <!-- ===== Header: patch panel ===== -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="#top" class="brand" aria-label="Wachira Njoroge, back to top">
+                <span class="brand-mark" aria-hidden="true"><span></span></span>
+                <span class="brand-name">Wachira Njoroge</span>
+            </a>
+
+            <nav class="patch" aria-label="Sections">
+                <a href="#top" class="port" data-port="top"><span class="jack" aria-hidden="true"><i class="led"></i></span><span class="port-no">00</span><span class="port-label">Profile</span></a>
+                <a href="#work" class="port" data-port="work"><span class="jack" aria-hidden="true"><i class="led"></i></span><span class="port-no">01</span><span class="port-label">Work</span></a>
+                <a href="#layers" class="port" data-port="layers"><span class="jack" aria-hidden="true"><i class="led"></i></span><span class="port-no">02</span><span class="port-label">Layers</span></a>
+                <a href="#trace" class="port" data-port="trace"><span class="jack" aria-hidden="true"><i class="led"></i></span><span class="port-no">03</span><span class="port-label">Trace</span></a>
+                <a href="#stack" class="port" data-port="stack"><span class="jack" aria-hidden="true"><i class="led"></i></span><span class="port-no">04</span><span class="port-label">Stack</span></a>
+                <a href="#contact" class="port" data-port="contact"><span class="jack" aria-hidden="true"><i class="led"></i></span><span class="port-no">05</span><span class="port-label">Contact</span></a>
+            </nav>
+
+            <div class="header-tools">
+                <button class="theme-toggle" type="button" aria-label="Switch colour theme" title="Switch colour theme">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg>
+                </button>
+                <a class="btn btn-ghost btn-sm header-cv" href="assets/Wachira-Njoroge-CV-2026.pdf" download>CV <span aria-hidden="true">↓</span></a>
+            </div>
+        </div>
     </header>
 
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1>Hi, It's <span>Dior</span></h1>
-            <h3 class="text-animation">I'm a <span></span></h3>
-            <p>A computer science enthusiast with a knack for turning complex problems into elegant solutions. Whether it's coding, algorithms, or software development, I'm driven by curiosity and a passion for innovation. Explore my portfolio to see how I combine creativity and logic to build the future, one line of code at a time!</p>
+    <main>
+        <!-- ===== 00 · Profile ===== -->
+        <section class="hero" id="top" data-section="top">
+            <div class="wrap">
+                <div class="meta-bar mono">
+                    <span><i class="led led-on led-blink" aria-hidden="true"></i> Open to graduate &amp; internship roles</span>
+                    <span class="meta-sep" aria-hidden="true">/</span>
+                    <span>Nairobi, Kenya · EAT (UTC+3)</span>
+                    <span class="meta-sep hide-sm" aria-hidden="true">/</span>
+                    <span class="hide-sm">1°17′S 36°49′E</span>
+                </div>
 
+                <div class="hero-grid">
+                    <div class="hero-copy">
+                        <p class="kicker mono"><span class="kicker-no">00</span> Profile — a.k.a. Dior</p>
+                        <h1 class="display">Wachira<br>Njoroge<span class="dot">.</span></h1>
+                        <p class="lede">I configure the network, <em>then build what runs on it.</em> Final-year Computer Science at Strathmore University, with enterprise networking at KCB Bank Group, full-stack products in production, and an AI matching engine for Kenya's job market.</p>
 
-            <div class="social-icons">
-                <a href="#"><i class='bx bxl-linkedin'></i></a>
-                <a href="#"><i class='bx bxl-github'></i></a>
-                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
-                <a href="#"><i class='bx bxl-twitter' ></i></a>
-            </div>
+                        <div class="cta-row">
+                            <a class="btn btn-signal" href="#work">See the work <span aria-hidden="true">→</span></a>
+                            <a class="btn btn-ghost" href="assets/Wachira-Njoroge-CV-2026.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
+                        </div>
 
-            <div class="btn-group">
-                <a href="#" class="btn">Hire</a>
-                <a href="#contact" 
-                class="btn">Contact</a>
-            </div>
-        </div>
-            <div class="home-img">
-                <img src="image.jpg" alt="">
-            </div>
-    </section>
-
-    <section class="education" id="education">
-        <h2 class="heading">Education</h2>
-
-        <div class="timeline-items">
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2019</div>
-                    <div class="timeline-content">
-                        <h3>High School</h3>
-                        <p>
-                            A top performer from Nova Pioneer, known for their innovative education model, 
-                            brings critical thinking and problem-solving skills to the IT sector. With a 
-                            strong foundation in coding, data analysis, and system design, they showcase projects 
-                            like AI-powered chatbots and data visualization dashboards. Their portfolio highlights 
-                            practical applications of theoretical knowledge, making them a strong candidate for IT roles.
-                        </p>
+                        <ul class="hero-facts mono" aria-label="At a glance">
+                            <li><b>CCNA</b><span>Switching, Routing &amp; Wireless</span></li>
+                            <li><b>AWS</b><span>Cloud Foundations</span></li>
+                            <li><b>2 live</b><span>Products in production</span></li>
+                        </ul>
                     </div>
-                
-            </div>
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2023</div>
-                    <div class="timeline-content">
-                        <h3>University</h3>
-                        <p>
-                            A top performer from Strathmore University, known for their innovative education model, 
-                            brings critical thinking and problem-solving skills to the IT sector. With a 
-                            strong foundation in coding, data analysis, and system design, they showcase projects 
-                            like AI-powered chatbots and data visualization dashboards. Their portfolio highlights 
-                            practical applications of theoretical knowledge, making them a strong candidate for IT roles.
-                        </p>
+                    <div class="hero-figure">
+                        <figure class="portrait">
+                            <div class="portrait-frame">
+                                <img src="assets/img/portrait.jpg" alt="Wachira Njoroge smiling and giving a thumbs-up, outdoors on a tree-lined campus lawn" width="960" height="1028">
+                            </div>
+                            <figcaption class="mono"><span>Fig. 01</span> The engineer, Strathmore grounds, Nairobi.</figcaption>
+                        </figure>
+
+                        <div class="console" aria-label="Console session: show version">
+                            <div class="console-bar mono">
+                                <span>CONSOLE 0</span><span>9600 8N1</span>
+                            </div>
+<pre class="console-body mono" id="console"><span class="c-prompt">WN-CORE-01#</span> show version
+Strathmore University · BSc Informatics &amp; CS
+  Final year · uptime since Apr 2023
+Last post: KCB Bank Group, Network Infra (Intern)
+Certified: CCNA SRWE · AWS Cloud Foundations
+Running: 2 apps live, 1 in staging
+<span class="c-prompt">WN-CORE-01#</span> <span class="c-cursor"></span></pre>
+                        </div>
                     </div>
-                
-            </div>
+                </div>
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2024</div>
-                    <div class="timeline-content">
-                        <h3>Community Based Learning</h3>
-                        <p>
-                            A top performer from Nova Pioneer, known for their innovative education model, 
-                            brings critical thinking and problem-solving skills to the IT sector. With a 
-                            strong foundation in coding, data analysis, and system design, they showcase projects 
-                            like AI-powered chatbots and data visualization dashboards. Their portfolio highlights 
-                            practical applications of theoretical knowledge, making them a strong candidate for IT roles.
-                        </p>
+                <!-- show interfaces status: the at-a-glance index -->
+                <div class="ifstatus">
+                    <p class="ifstatus-cmd mono"><span class="c-prompt">WN-CORE-01#</span> show interfaces status</p>
+                    <table class="iftable mono">
+                        <thead>
+                            <tr><th scope="col">Port</th><th scope="col">Name</th><th scope="col">Status</th><th scope="col" class="col-type">Type</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Gi0/1</td>
+                                <td><a href="#unit-resolve">RESOLVE</a></td>
+                                <td><span class="state state-up"><i class="led led-on" aria-hidden="true"></i>connected</span></td>
+                                <td class="col-type">Next.js 15 · PostgreSQL · live</td>
+                            </tr>
+                            <tr>
+                                <td>Gi0/2</td>
+                                <td><a href="#unit-repolens">REPOLENS</a></td>
+                                <td><span class="state state-up"><i class="led led-on" aria-hidden="true"></i>connected</span></td>
+                                <td class="col-type">Python · Gemini API · live</td>
+                            </tr>
+                            <tr>
+                                <td>Gi0/3</td>
+                                <td><a href="#unit-jobbridge">JOBBRIDGE</a></td>
+                                <td><span class="state state-wait"><i class="led led-amber" aria-hidden="true"></i>blocking</span></td>
+                                <td class="col-type">AI capstone · deploy pending</td>
+                            </tr>
+                            <tr>
+                                <td>Gi0/4</td>
+                                <td><a href="#hop-kcb">KCB-BANK</a></td>
+                                <td><span class="state"><i class="led led-off" aria-hidden="true"></i>completed</span></td>
+                                <td class="col-type">Network infrastructure · Jan–Apr 2026</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 01 · Work: the rack ===== -->
+        <section class="section work" id="work" data-section="work">
+            <div class="wrap">
+                <header class="section-head">
+                    <p class="kicker mono"><span class="kicker-no">01</span> Selected work</p>
+                    <h2 class="section-title">Three units in the rack. <em>Two are live.</em></h2>
+                    <p class="section-intro">Each one is designed, built, tested and deployed end to end by me: data model, API, interface and the CI that guards it.</p>
+                </header>
+
+                <div class="rack">
+
+                    <!-- U1 · Resolve -->
+                    <article class="unit" id="unit-resolve" aria-labelledby="t-resolve">
+                        <div class="unit-rail">
+                            <span class="screw" aria-hidden="true"></span>
+                            <span class="unit-id mono">U1 · RSV-15</span>
+                            <span class="unit-leds mono">
+                                <span><i class="led led-on" aria-hidden="true"></i>LINK</span>
+                                <span><i class="led led-on led-blink" aria-hidden="true"></i>ACT</span>
+                                <span class="unit-status status-live">Live</span>
+                            </span>
+                            <span class="screw" aria-hidden="true"></span>
+                        </div>
+
+                        <div class="unit-body">
+                            <figure class="unit-shot">
+                                <a href="https://resolve-service-desk.vercel.app" target="_blank" rel="noopener" class="shot-frame" tabindex="-1" aria-hidden="true">
+                                    <img src="assets/img/resolve-home.jpg" alt="" width="1440" height="900" loading="lazy">
+                                </a>
+                                <figcaption class="mono"><span>Fig. 02</span> Resolve's landing page: "Every problem gets a number."</figcaption>
+                            </figure>
+
+                            <div class="unit-copy">
+                                <p class="unit-kind mono">Full-stack · IT service desk</p>
+                                <h3 class="unit-title" id="t-resolve">Resolve</h3>
+                                <p class="unit-pitch">A service desk where every ticket races a visible SLA clock.</p>
+                                <p>Employees raise tickets, engineers work them from a drag-and-drop Kanban queue against live SLA countdowns, and administrators get reporting over the whole desk. Built to production standard, with role-based access re-checked against the database on every action.</p>
+
+                                <ul class="unit-points">
+                                    <li><b>SLA engine</b> with per-priority response and resolution targets, plus automatic escalation on breach</li>
+                                    <li><b>Engineer tooling:</b> Kanban queue, ⌘K command palette, internal notes, live notifications, and knowledge-base suggestions as you type</li>
+                                    <li><b>Reports:</b> SLA compliance, CSAT and an engineer leaderboard, with CSV export guarded against formula injection</li>
+                                    <li><b>Security:</b> bcrypt with signed JWT sessions, rate-limited sign-in, and sandboxed uploads, all validated with Zod</li>
+                                </ul>
+
+                                <dl class="spec mono">
+                                    <div><dt>Stack</dt><dd>Next.js 15 · React 19 · TypeScript · Prisma · PostgreSQL · Tailwind v4</dd></div>
+                                    <div><dt>Tested</dt><dd>Vitest unit · Playwright end-to-end · GitHub Actions CI</dd></div>
+                                    <div><dt>Hosted</dt><dd>Vercel · Neon Postgres · Vercel Blob</dd></div>
+                                </dl>
+
+                                <p class="unit-note mono"><i class="led led-on" aria-hidden="true"></i> One-click demo accounts on the sign-in page. No sign-up needed.</p>
+
+                                <div class="unit-actions">
+                                    <a class="btn btn-signal" href="https://resolve-service-desk.vercel.app" target="_blank" rel="noopener">Open live site <span aria-hidden="true">↗</span></a>
+                                    <a class="btn btn-ghost" href="https://github.com/DiorWachira/resolve-service-desk" target="_blank" rel="noopener">Source <span aria-hidden="true">↗</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="unit-foot mono" aria-hidden="true">
+                            <span class="barcode"></span><span>SN DW-2026-RSV15</span><span class="foot-fill"></span><span>TypeScript 94%</span>
+                        </div>
+                    </article>
+
+                    <!-- U2 · RepoLens -->
+                    <article class="unit" id="unit-repolens" aria-labelledby="t-repolens">
+                        <div class="unit-rail">
+                            <span class="screw" aria-hidden="true"></span>
+                            <span class="unit-id mono">U2 · RL-08</span>
+                            <span class="unit-leds mono">
+                                <span><i class="led led-on" aria-hidden="true"></i>LINK</span>
+                                <span><i class="led led-on led-blink" aria-hidden="true"></i>ACT</span>
+                                <span class="unit-status status-live">Live</span>
+                            </span>
+                            <span class="screw" aria-hidden="true"></span>
+                        </div>
+
+                        <div class="unit-body unit-body-flip">
+                            <figure class="unit-shot">
+                                <a href="https://repolens-klm1.onrender.com" target="_blank" rel="noopener" class="shot-frame" tabindex="-1" aria-hidden="true">
+                                    <img src="assets/img/repolens-home.jpg" alt="" width="1440" height="900" loading="lazy">
+                                </a>
+                                <figcaption class="mono"><span>Fig. 03</span> RepoLens maps a repository's health score onto an optician's acuity chart.</figcaption>
+                                <a href="https://repolens-klm1.onrender.com" target="_blank" rel="noopener" class="shot-frame shot-second" tabindex="-1" aria-hidden="true">
+                                    <img src="assets/img/repolens-07-examiner.jpg" alt="" width="1440" height="900" loading="lazy">
+                                </a>
+                                <figcaption class="mono"><span>Fig. 03b</span> The Examiner: a Gemini-backed consultation with a verify step for every fix.</figcaption>
+                            </figure>
+
+                            <div class="unit-copy">
+                                <p class="unit-kind mono">Developer tool · CLI + web + AI</p>
+                                <h3 class="unit-title" id="t-repolens">RepoLens</h3>
+                                <p class="unit-pitch">A health check for any GitHub repository: eight checks, one score, and an AI examiner to talk it through.</p>
+                                <p>Paste a public repo URL and RepoLens downloads the archive and audits README quality, licensing, tests, CI, TODO debt, oversized files and hardcoded secrets. It then writes a prescription with a verify command for every fix. The core is pure Python standard library with zero dependencies, and it doubles as a CLI and a CI gate.</p>
+
+                                <ul class="unit-points">
+                                    <li><b>Zero-dependency core:</b> text and JSON reports, with exit codes built for CI (<code>--strict</code>)</li>
+                                    <li><b>The Examiner:</b> an optional Gemini advisor with a model fallback chain, per-client rate limits and an offline deterministic mode</li>
+                                    <li><b>Hardened ingestion:</b> archive size, expansion and entry-count limits, plus job timeouts and recovery after a restart</li>
+                                    <li><b>Verified UI:</b> Playwright tests at desktop and phone widths, and a status palette validated for colour-vision deficiency</li>
+                                </ul>
+
+                                <dl class="spec mono">
+                                    <div><dt>Stack</dt><dd>Python (stdlib) · JavaScript · HTML/CSS · Google Gemini API</dd></div>
+                                    <div><dt>Tested</dt><dd>unittest · Playwright e2e · GitHub Actions CI</dd></div>
+                                    <div><dt>Hosted</dt><dd>Render (Blueprint, auto-deploy on push)</dd></div>
+                                </dl>
+
+                                <p class="unit-note mono"><i class="led led-amber" aria-hidden="true"></i> Free instance: the first visit can take up to a minute while it wakes.</p>
+
+                                <div class="unit-actions">
+                                    <a class="btn btn-signal" href="https://repolens-klm1.onrender.com" target="_blank" rel="noopener">Open live site <span aria-hidden="true">↗</span></a>
+                                    <a class="btn btn-ghost" href="https://github.com/DiorWachira/repolens" target="_blank" rel="noopener">Source <span aria-hidden="true">↗</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="unit-foot mono" aria-hidden="true">
+                            <span class="barcode"></span><span>SN DW-2026-RL08</span><span class="foot-fill"></span><span>0 runtime deps</span>
+                        </div>
+                    </article>
+
+                    <!-- U3 · JobBridge -->
+                    <article class="unit unit-staging" id="unit-jobbridge" aria-labelledby="t-jobbridge">
+                        <div class="unit-rail">
+                            <span class="screw" aria-hidden="true"></span>
+                            <span class="unit-id mono">U3 · JB-26</span>
+                            <span class="unit-leds mono">
+                                <span><i class="led led-amber" aria-hidden="true"></i>STP</span>
+                                <span><i class="led led-off" aria-hidden="true"></i>ACT</span>
+                                <span class="unit-status status-wait">Staging</span>
+                            </span>
+                            <span class="screw" aria-hidden="true"></span>
+                        </div>
+
+                        <div class="unit-body">
+                            <figure class="unit-shot unit-diagram">
+                                <div class="diagram-frame">
+                                    <p class="diagram-title mono">Matching pipeline · schematic</p>
+                                    <svg viewBox="0 0 540 300" role="img" aria-labelledby="jb-svg-title">
+                                        <title id="jb-svg-title">Pipeline: CV and job parsing feeds a skill graph, which splits into rule filters and semantic similarity, merges into a ranking model and outputs a match. Hiring outcomes loop back to retrain the model.</title>
+                                        <path class="d-loop" d="M420 130 V240 H150 V130"/>
+                                        <g class="d-line">
+                                            <path d="M48 130 H190 L230 90 H330 L370 130 H500"/>
+                                            <path d="M190 130 L230 170 H330 L370 130"/>
+                                        </g>
+                                        <g class="d-stop">
+                                            <circle cx="48" cy="130" r="8"/>
+                                            <circle cx="150" cy="130" r="8"/>
+                                            <circle cx="280" cy="90" r="8"/>
+                                            <circle cx="280" cy="170" r="8"/>
+                                            <circle cx="420" cy="130" r="8"/>
+                                        </g>
+                                        <circle class="d-end" cx="500" cy="130" r="11"/>
+                                        <g class="d-label">
+                                            <text x="48" y="96" text-anchor="middle">Parse</text>
+                                            <text x="48" y="112" text-anchor="middle" class="d-sub">CV · JD · NLP</text>
+                                            <text x="150" y="96" text-anchor="middle">Skill graph</text>
+                                            <text x="150" y="112" text-anchor="middle" class="d-sub">Neo4j</text>
+                                            <text x="280" y="68" text-anchor="middle">Rule filters</text>
+                                            <text x="280" y="200" text-anchor="middle">Semantic match</text>
+                                            <text x="280" y="216" text-anchor="middle" class="d-sub">BERT embeddings</text>
+                                            <text x="420" y="96" text-anchor="middle">Rank</text>
+                                            <text x="420" y="112" text-anchor="middle" class="d-sub">ML model</text>
+                                            <text x="500" y="160" text-anchor="middle">Match</text>
+                                            <text x="285" y="262" text-anchor="middle" class="d-sub">Hiring outcomes retrain the model</text>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <figcaption class="mono"><span>Fig. 04</span> Hybrid scoring: hard rules and semantic similarity merge before ranking.</figcaption>
+                            </figure>
+
+                            <div class="unit-copy">
+                                <p class="unit-kind mono">Final-year capstone · AI / ML</p>
+                                <h3 class="unit-title" id="t-jobbridge">JobBridge</h3>
+                                <p class="unit-pitch">Matching Kenyan job seekers to roles on what they can do, not on which keywords they typed.</p>
+                                <p>JobBridge is a hybrid AI matching and recommendation engine for workforce placement in Kenya. It combines rule-based eligibility, semantic similarity and a predictive ranking model, and a skill graph explains <em>why</em> a candidate matches and which skills they are missing. Hiring outcomes feed back to retrain the model.</p>
+
+                                <ul class="unit-points">
+                                    <li><b>NLP parsing</b> of CVs and job descriptions into a knowledge graph of skills and roles</li>
+                                    <li><b>Explainable matches:</b> matched and missing skills, with model provenance stored on every evaluation</li>
+                                    <li><b>ML discipline:</b> a validated model contract that checks training and serving feature parity</li>
+                                    <li><b>Security:</b> authenticator-app two-step verification (RFC 6238), hashed recovery codes, encrypted secrets and Google sign-in</li>
+                                </ul>
+
+                                <dl class="spec mono">
+                                    <div><dt>Stack</dt><dd>Python · FastAPI · scikit-learn · BERT · PostgreSQL · Neo4j · React · TypeScript</dd></div>
+                                    <div><dt>Ops</dt><dd>Docker Compose · Alembic migrations · backend CI</dd></div>
+                                    <div><dt>Status</dt><dd>In active development · public deployment pending</dd></div>
+                                </dl>
+
+                                <div class="unit-actions">
+                                    <!-- When JobBridge goes live: replace this <span> with
+                                         <a class="btn btn-signal" href="YOUR-LIVE-URL" target="_blank" rel="noopener">Open live site <span aria-hidden="true">↗</span></a>
+                                         and change the rail above to LINK/ACT + "Live" (copy U1's rail). -->
+                                    <span class="btn btn-disabled" aria-disabled="true">Live site · coming soon</span>
+                                    <a class="btn btn-ghost" href="https://github.com/DiorWachira/Hybrid-AI-Powered-Matching-and-Recommendation-Engine" target="_blank" rel="noopener">Source <span aria-hidden="true">↗</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="unit-foot mono" aria-hidden="true">
+                            <span class="barcode"></span><span>SN DW-2026-JB26</span><span class="foot-fill"></span><span>Python · TypeScript</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 02 · Layers ===== -->
+        <section class="section layers" id="layers" data-section="layers">
+            <div class="wrap">
+                <header class="section-head">
+                    <p class="kicker mono"><span class="kicker-no">02</span> What I do</p>
+                    <h2 class="section-title">Most engineers pick a layer. <em>I work the whole stack.</em></h2>
+                </header>
+
+                <ol class="osi">
+                    <li class="osi-row">
+                        <div class="osi-tag mono"><span>L8</span><small>Intelligence<sup>*</sup></small></div>
+                        <div class="osi-body">
+                            <h3>Applied machine learning</h3>
+                            <p>NLP parsing, semantic embeddings, feature selection and predictive ranking with scikit-learn. I build models that explain themselves and are checked for training–serving parity.</p>
+                        </div>
+                        <a class="osi-proof mono" href="#unit-jobbridge">Proof: JobBridge <span aria-hidden="true">→</span></a>
+                    </li>
+                    <li class="osi-row">
+                        <div class="osi-tag mono"><span>L4–7</span>Software</div>
+                        <div class="osi-body">
+                            <h3>Full-stack products</h3>
+                            <p>TypeScript and Python, from Next.js, React and Node to FastAPI, REST and PostgreSQL. Auth, role-based access, tests and CI come as standard. Shipped, not just demoed.</p>
+                        </div>
+                        <a class="osi-proof mono" href="#unit-resolve">Proof: Resolve, RepoLens <span aria-hidden="true">→</span></a>
+                    </li>
+                    <li class="osi-row">
+                        <div class="osi-tag mono"><span>L1–3</span>Network</div>
+                        <div class="osi-body">
+                            <h3>Enterprise infrastructure</h3>
+                            <p>Cisco IOS: VLANs and trunking, Spanning Tree, IP addressing and subnetting, routing and site-to-site VPN. I've practised it in a live banking network across regional branches.</p>
+                        </div>
+                        <a class="osi-proof mono" href="#hop-kcb">Proof: KCB Bank Group <span aria-hidden="true">→</span></a>
+                    </li>
+                </ol>
+                <p class="footnote mono"><sup>*</sup> Network engineers joke that "layer 8" is the user. Here it is the model that understands them.</p>
+            </div>
+        </section>
+
+        <!-- ===== 03 · Trace ===== -->
+        <section class="section trace" id="trace" data-section="trace">
+            <div class="wrap">
+                <header class="section-head">
+                    <p class="kicker mono"><span class="kicker-no">03</span> Experience &amp; education</p>
+                    <h2 class="section-title">The route so far.</h2>
+                    <p class="ifstatus-cmd mono"><span class="c-prompt">WN-CORE-01#</span> traceroute career</p>
+                </header>
+
+                <ol class="hops">
+                    <li class="hop">
+                        <span class="hop-no mono">1</span>
+                        <div class="hop-main">
+                            <p class="hop-when mono">Apr 2023 → present</p>
+                            <h3>BSc. Informatics &amp; Computer Science</h3>
+                            <p class="hop-org">Strathmore University · Nairobi</p>
+                            <p>Focus areas: software development, data structures and algorithms, network security and machine learning.</p>
+                        </div>
+                    </li>
+                    <li class="hop">
+                        <span class="hop-no mono">2</span>
+                        <div class="hop-main">
+                            <p class="hop-when mono">Feb → Mar 2024</p>
+                            <h3>Volunteer: IT Support &amp; Digital Literacy Tutor</h3>
+                            <p class="hop-org">St. Joseph's Primary School · Nairobi</p>
+                            <ul>
+                                <li>Kept classroom technology and administrative systems running.</li>
+                                <li>Designed and delivered computer-literacy lessons to promote digital inclusion.</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="hop">
+                        <span class="hop-no mono">3</span>
+                        <div class="hop-main">
+                            <p class="hop-when mono">Apr 2025</p>
+                            <h3>CCNA: Switching, Routing &amp; Wireless Essentials</h3>
+                            <p class="hop-org">Cisco Networking Academy</p>
+                        </div>
+                    </li>
+                    <li class="hop hop-major" id="hop-kcb">
+                        <span class="hop-no mono">4</span>
+                        <div class="hop-main">
+                            <p class="hop-when mono">Jan → Apr 2026 · on-site</p>
+                            <h3>Regional Network Infrastructure Engineer (Intern)</h3>
+                            <p class="hop-org">KCB Bank Group · Nairobi</p>
+                            <ul>
+                                <li>Supported configuration and maintenance of LAN and WAN infrastructure across regional branches using Cisco IOS.</li>
+                                <li>Configured VLANs, trunking and Spanning Tree Protocol to keep branch switching segmented and loop-free.</li>
+                                <li>Applied IP addressing and subnetting, routing and site-to-site VPN connectivity in a live banking network.</li>
+                                <li>Contributed to network architecture documentation and troubleshooting of connectivity issues.</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="hop">
+                        <span class="hop-no mono">5</span>
+                        <div class="hop-main">
+                            <p class="hop-when mono">2026 → present</p>
+                            <h3>Capstone: JobBridge, a hybrid AI matching engine</h3>
+                            <p class="hop-org">Strathmore University · final-year project</p>
+                            <p>The pipeline runs from NLP parsing to a skills knowledge graph, then to rules plus semantic similarity, then to predictive ranking, with a feedback loop for retraining. <a href="#unit-jobbridge">See unit U3 →</a></p>
+                        </div>
+                    </li>
+                    <li class="hop">
+                        <span class="hop-no mono">6</span>
+                        <div class="hop-main">
+                            <p class="hop-when mono">Jul 2026</p>
+                            <h3>AWS Academy Graduate: Cloud Foundations</h3>
+                            <p class="hop-org">Amazon Web Services</p>
+                        </div>
+                    </li>
+                    <li class="hop hop-next">
+                        <span class="hop-no mono">7</span>
+                        <div class="hop-main">
+                            <p class="hop-when mono">* &nbsp; * &nbsp; *</p>
+                            <h3>Next hop: <em>your team.</em></h3>
+                            <p>Request awaiting a reply. I'm looking for graduate and internship roles in software engineering, infrastructure or cloud.</p>
+                            <a class="btn btn-signal" href="#contact">Establish a link <span aria-hidden="true">→</span></a>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ===== 04 · Stack ===== -->
+        <section class="section stack" id="stack" data-section="stack">
+            <div class="wrap">
+                <header class="section-head">
+                    <p class="kicker mono"><span class="kicker-no">04</span> Skills &amp; certifications</p>
+                    <h2 class="section-title">Patch schedule.</h2>
+                    <p class="section-intro">Every run is labelled at both ends. These are the tools I reach for, and the ones my shipped projects actually use.</p>
+                </header>
+
+                <div class="schedule">
+                    <div class="sched-row">
+                        <p class="sched-id mono"><span>A-01</span>Languages</p>
+                        <ul class="cables">
+                            <li class="cable">Python</li><li class="cable">TypeScript</li><li class="cable">JavaScript</li><li class="cable">Java</li><li class="cable">C++</li><li class="cable">HTML</li><li class="cable">CSS</li>
+                        </ul>
                     </div>
-                
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2026</div>
-                    <div class="timeline-content">
-                        <h3>Internship</h3>
-                        <p>
-                            A top performer from Nova Pioneer, known for their innovative education model, 
-                            brings critical thinking and problem-solving skills to the IT sector. With a 
-                            strong foundation in coding, data analysis, and system design, they showcase projects 
-                            like AI-powered chatbots and data visualization dashboards. Their portfolio highlights 
-                            practical applications of theoretical knowledge, making them a strong candidate for IT roles.
-                        </p>
+                    <div class="sched-row">
+                        <p class="sched-id mono"><span>A-02</span>Web</p>
+                        <ul class="cables">
+                            <li class="cable">React</li><li class="cable">Next.js</li><li class="cable">Node.js</li><li class="cable">FastAPI</li><li class="cable">REST APIs</li><li class="cable">Prisma</li><li class="cable">Tailwind CSS</li><li class="cable">Postman</li>
+                        </ul>
                     </div>
-                
-            </div>
-        </div>
-    </section>
-
-    <section class="services" id="services">
-        <h2 class="heading">Services</h2>
-        <div class="services-container">
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>UI Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo necessitatibus libero, perferendis sint, sapiente distinctio illo et temporibus nisi aliquam reiciendis alias laudantium tempore obcaecati ea facilis, blanditiis maxime delectus.</p>
-                </div>
-            </div>
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Frontend Development</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo necessitatibus libero, perferendis sint, sapiente distinctio illo et temporibus nisi aliquam reiciendis alias laudantium tempore obcaecati ea facilis, blanditiis maxime delectus.</p>
-                </div>
-            </div>
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Backend Development</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo necessitatibus libero, perferendis sint, sapiente distinctio illo et temporibus nisi aliquam reiciendis alias laudantium tempore obcaecati ea facilis, blanditiis maxime delectus.</p>
-                </div>
-            </div>
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Testing</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo necessitatibus libero, perferendis sint, sapiente distinctio illo et temporibus nisi aliquam reiciendis alias laudantium tempore obcaecati ea facilis, blanditiis maxime delectus.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="testimonials" id="testimonials">
-        <div class="testimonials-box">
-            <h2 class="heading">Testimonials</h2>
-            <div class="wrapper">
-                <div class="testimonial-item">
-                    <img src="T1.jpg" alt="Jason">
-                    <h2>Jason</h2>
-                    <div class="rating">
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
+                    <div class="sched-row">
+                        <p class="sched-id mono"><span>A-03</span>Data &amp; ML</p>
+                        <ul class="cables">
+                            <li class="cable">scikit-learn</li><li class="cable">NLP</li><li class="cable">BERT embeddings</li><li class="cable">Semantic search</li><li class="cable">Feature selection</li><li class="cable">Knowledge graphs</li>
+                        </ul>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit amet magni perspiciatis. Reiciendis quaerat fuga, cupiditate corrupti praesentium libero saepe error iure repellendus veniam rerum, odio eaque nam illo dignissimos.</p>
-                </div>
-                <div class="testimonial-item">
-                    <img src="T2.jpg" alt="Ethan">
-                    <h2>Bwibzzz</h2>
-                    <div class="rating">
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star-half' id="star"></i>
+                    <div class="sched-row">
+                        <p class="sched-id mono"><span>A-04</span>Databases</p>
+                        <ul class="cables">
+                            <li class="cable">PostgreSQL</li><li class="cable">MySQL</li><li class="cable">MongoDB</li><li class="cable">Neo4j</li><li class="cable">Firebase</li>
+                        </ul>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit amet magni perspiciatis. Reiciendis quaerat fuga, cupiditate corrupti praesentium libero saepe error iure repellendus veniam rerum, odio eaque nam illo dignissimos.</p>
-                </div>
-                <div class="testimonial-item">
-                    <img src="T3.jpg" alt="Daniel">
-                    <h2>Daniel</h2>
-                    <div class="rating">
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
+                    <div class="sched-row">
+                        <p class="sched-id mono"><span>A-05</span>Networking</p>
+                        <ul class="cables">
+                            <li class="cable">Cisco IOS</li><li class="cable">Routing</li><li class="cable">VLANs &amp; trunking</li><li class="cable">STP</li><li class="cable">Subnetting</li><li class="cable">LAN / WAN</li><li class="cable">Site-to-site VPN</li><li class="cable">TCP/IP</li>
+                        </ul>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit amet magni perspiciatis. Reiciendis quaerat fuga, cupiditate corrupti praesentium libero saepe error iure repellendus veniam rerum, odio eaque nam illo dignissimos.</p>
+                    <div class="sched-row">
+                        <p class="sched-id mono"><span>A-06</span>Cloud &amp; tools</p>
+                        <ul class="cables">
+                            <li class="cable">AWS</li><li class="cable">Vercel</li><li class="cable">Render</li><li class="cable">Docker</li><li class="cable">Git &amp; GitHub Actions</li><li class="cable">Playwright</li><li class="cable">Vitest</li><li class="cable">draw.io</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 class="sub-title mono">Inspection labels</h3>
+                <ul class="certs">
+                    <li class="cert">
+                        <p class="cert-head mono"><span>Certified</span><span>Jul 2026</span></p>
+                        <p class="cert-name">AWS Academy Graduate: Cloud Foundations</p>
+                        <p class="cert-org mono">Amazon Web Services</p>
+                    </li>
+                    <li class="cert">
+                        <p class="cert-head mono"><span>Certified</span><span>Apr 2025</span></p>
+                        <p class="cert-name">CCNA: Switching, Routing &amp; Wireless Essentials</p>
+                        <p class="cert-org mono">Cisco Networking Academy</p>
+                    </li>
+                    <li class="cert">
+                        <p class="cert-head mono"><span>Certified</span><span>Nov 2025</span></p>
+                        <p class="cert-name">Informed Consent: Research Ethics Evaluation</p>
+                        <p class="cert-org mono">TRREE</p>
+                    </li>
+                </ul>
+
+                <p class="langs mono">Spoken: English (fluent) · French (basic)</p>
+            </div>
+        </section>
+
+        <!-- ===== 05 · Contact ===== -->
+        <section class="section contact" id="contact" data-section="contact">
+            <div class="wrap">
+                <div class="contact-grid">
+                    <div>
+                        <p class="kicker mono"><span class="kicker-no">05</span> Contact</p>
+                        <h2 class="display display-md">Let's establish<br>a <em>link.</em></h2>
+                        <p class="lede lede-sm">Hiring for software, infrastructure or cloud? I reply quickly, and I'm happy to walk you through any of the code above.</p>
+
+                        <div class="email-row">
+                            <a class="email" href="mailto:wachira.njoroge@strathmore.edu">wachira.njoroge@strathmore.edu</a>
+                            <button class="btn btn-ghost btn-sm copy-btn" type="button" data-copy="wachira.njoroge@strathmore.edu">Copy</button>
+                            <span class="copy-status mono" role="status" aria-live="polite"></span>
+                        </div>
+
+                        <ul class="links">
+                            <li><a href="https://www.linkedin.com/in/njoroge-wachira-b9273b37b" target="_blank" rel="noopener"><span class="mono">IN</span>LinkedIn <span aria-hidden="true">↗</span></a></li>
+                            <li><a href="https://github.com/DiorWachira" target="_blank" rel="noopener"><span class="mono">GH</span>GitHub · DiorWachira <span aria-hidden="true">↗</span></a></li>
+                            <li><a href="assets/Wachira-Njoroge-CV-2026.pdf" download><span class="mono">CV</span>Download CV (PDF) <span aria-hidden="true">↓</span></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="console console-static" aria-label="Console session: ping">
+                        <div class="console-bar mono"><span>VTY 0</span><span>SSH</span></div>
+<pre class="console-body mono"><span class="c-prompt">WN-CORE-01#</span> ping your-team
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to your-team:
+<span class="c-ok">!!!!!</span>
+Success rate is 100 percent (5/5)
+<span class="c-prompt">WN-CORE-01#</span> <span class="c-cursor"></span></pre>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
-
-        <form action="">
-            <div class="input-group">
-                <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email">
-                </div>
-                <div class="input-box">
-                    <input type="number" placeholder="Phone Number">
-                    <input type="text" placeholder="subject">
-                </div>
-            </div>
-
-
-            <div class="input-group-2">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <input type="submit" value="Send Message" class="btn">
-            </div>
-        </form>
-    </section>
+        </section>
+    </main>
 
     <footer class="footer">
-        <div class="social">
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
-                <a href="#"><i class='bx bxl-github'></i></a>
-                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
-                <a href="#"><i class='bx bxl-twitter' ></i></a>
+        <div class="wrap footer-inner mono">
+            <p>© <span id="year">2026</span> Wachira Njoroge</p>
+            <p class="colophon">Set in Fraunces, Archivo &amp; JetBrains Mono. Hand-built, no framework.</p>
+            <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
         </div>
-
-        <ul class="list">
-            <li>
-                <a href="#">FAQ</a>
-            </li>
-
-            <li>
-                <a href="#">Services</a>
-            </li>
-
-            <li>
-                <a href="#">About Me</a>
-            </li>
-
-            <li>
-                <a href="#">Contact</a>
-            </li>
-
-            <li>
-                <a href="#">Testimonials</a>
-            </li>
-        </ul>
-        <p class="copyright">
-            © Dior Wachira | All Rights Reserved
-        </p>
     </footer>
 
     <script src="script.js"></script>
