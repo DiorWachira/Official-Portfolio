@@ -14,7 +14,7 @@ Final-year Computer Science student at Strathmore University, Nairobi. I configu
 
 ## Contact
 
-- Email: [wachira.njoroge@strathmore.edu](mailto:wachira.njoroge@strathmore.edu)
+- Email: [diorwachira1@gmail.com](mailto:diorwachira1@gmail.com)
 - LinkedIn: [njoroge-wachira-b9273b37b](https://www.linkedin.com/in/njoroge-wachira-b9273b37b)
 - GitHub: [DiorWachira](https://github.com/DiorWachira)
 
