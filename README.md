@@ -10,7 +10,7 @@ Final-year Computer Science student at Strathmore University, Nairobi. I configu
 | --- | --- | --- |
 | **Resolve** | Full-stack IT service desk with an SLA engine, Kanban queue and reporting (Next.js 15, Prisma, PostgreSQL) | [Live](https://resolve-service-desk.vercel.app) · [Source](https://github.com/DiorWachira/resolve-service-desk) |
 | **RepoLens** | Repository health checker: CLI, web dashboard and a Gemini-powered examiner (Python, zero dependencies) | [Live](https://repolens-klm1.onrender.com) · [Source](https://github.com/DiorWachira/repolens) |
-| **JobBridge** | Final-year capstone: hybrid AI job-matching engine (FastAPI, scikit-learn, BERT, Neo4j, React) | Live site coming soon · [Source](https://github.com/DiorWachira/Hybrid-AI-Powered-Matching-and-Recommendation-Engine) |
+| **JobBridge** | Final-year capstone: hybrid AI job-matching engine (FastAPI, scikit-learn, BERT, Neo4j, React) | [Live](https://140-238-99-64.sslip.io/auth) · [Source](https://github.com/DiorWachira/Hybrid-AI-Powered-Matching-and-Recommendation-Engine) |
 
 ## Contact
 

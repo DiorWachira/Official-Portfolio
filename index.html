@@ -80,7 +80,7 @@
                         <ul class="hero-facts mono" aria-label="At a glance">
                             <li><b>CCNA</b><span>Switching, Routing &amp; Wireless</span></li>
                             <li><b>AWS</b><span>Cloud Foundations</span></li>
-                            <li><b>2 live</b><span>Products in production</span></li>
+                            <li><b>3 live</b><span>Products in production</span></li>
                         </ul>
                     </div>
 
@@ -101,7 +101,7 @@ Strathmore University · BSc Informatics &amp; CS
   Final year · uptime since Apr 2023
 Last post: KCB Bank Group, Network Infra (Intern)
 Certified: CCNA SRWE · AWS Cloud Foundations
-Running: 2 apps live, 1 in staging
+Running: 3 apps live in production
 <span class="c-prompt">WN-CORE-01#</span> <span class="c-cursor"></span></pre>
                         </div>
                     </div>
@@ -130,8 +130,8 @@ Running: 2 apps live, 1 in staging
                             <tr>
                                 <td>Gi0/3</td>
                                 <td><a href="#unit-jobbridge">JOBBRIDGE</a></td>
-                                <td><span class="state state-wait"><i class="led led-amber" aria-hidden="true"></i>blocking</span></td>
-                                <td class="col-type">AI capstone · deploy pending</td>
+                                <td><span class="state state-up"><i class="led led-on" aria-hidden="true"></i>connected</span></td>
+                                <td class="col-type">FastAPI · React · AI capstone · live</td>
                             </tr>
                             <tr>
                                 <td>Gi0/4</td>
@@ -150,7 +150,7 @@ Running: 2 apps live, 1 in staging
             <div class="wrap">
                 <header class="section-head">
                     <p class="kicker mono"><span class="kicker-no">01</span> Selected work</p>
-                    <h2 class="section-title">Three units in the rack. <em>Two are live.</em></h2>
+                    <h2 class="section-title">Three units in the rack. <em>All three are live.</em></h2>
                     <p class="section-intro">Each one is designed, built, tested and deployed end to end by me: data model, API, interface and the CI that guards it.</p>
                 </header>
 
@@ -269,14 +269,14 @@ Running: 2 apps live, 1 in staging
                     </article>
 
                     <!-- U3 · JobBridge -->
-                    <article class="unit unit-staging" id="unit-jobbridge" aria-labelledby="t-jobbridge">
+                    <article class="unit" id="unit-jobbridge" aria-labelledby="t-jobbridge">
                         <div class="unit-rail">
                             <span class="screw" aria-hidden="true"></span>
                             <span class="unit-id mono">U3 · JB-26</span>
                             <span class="unit-leds mono">
-                                <span><i class="led led-amber" aria-hidden="true"></i>STP</span>
-                                <span><i class="led led-off" aria-hidden="true"></i>ACT</span>
-                                <span class="unit-status status-wait">Staging</span>
+                                <span><i class="led led-on" aria-hidden="true"></i>LINK</span>
+                                <span><i class="led led-on led-blink" aria-hidden="true"></i>ACT</span>
+                                <span class="unit-status status-live">Live</span>
                             </span>
                             <span class="screw" aria-hidden="true"></span>
                         </div>
@@ -322,7 +322,7 @@ Running: 2 apps live, 1 in staging
                                 <p class="unit-kind mono">Final-year capstone · AI / ML</p>
                                 <h3 class="unit-title" id="t-jobbridge">JobBridge</h3>
                                 <p class="unit-pitch">Matching Kenyan job seekers to roles on what they can do, not on which keywords they typed.</p>
-                                <p>JobBridge is a hybrid AI matching and recommendation engine for workforce placement in Kenya. It combines rule-based eligibility, semantic similarity and a predictive ranking model, and a skill graph explains <em>why</em> a candidate matches and which skills they are missing. Hiring outcomes feed back to retrain the model.</p>
+                                <p>JobBridge is a hybrid AI matching and recommendation engine for workforce placement in Kenya, now running live in production. It combines rule-based eligibility, semantic similarity and a predictive ranking model, and a skill graph explains <em>why</em> a candidate matches and which skills they are missing. Hiring outcomes feed back to retrain the model.</p>
 
                                 <ul class="unit-points">
                                     <li><b>NLP parsing</b> of CVs and job descriptions into a knowledge graph of skills and roles</li>
@@ -334,14 +334,11 @@ Running: 2 apps live, 1 in staging
                                 <dl class="spec mono">
                                     <div><dt>Stack</dt><dd>Python · FastAPI · scikit-learn · BERT · PostgreSQL · Neo4j · React · TypeScript</dd></div>
                                     <div><dt>Ops</dt><dd>Docker Compose · Alembic migrations · backend CI</dd></div>
-                                    <div><dt>Status</dt><dd>In active development · public deployment pending</dd></div>
+                                    <div><dt>Status</dt><dd>Live in production · in active development</dd></div>
                                 </dl>
 
                                 <div class="unit-actions">
-                                    <!-- When JobBridge goes live: replace this <span> with
-                                         <a class="btn btn-signal" href="YOUR-LIVE-URL" target="_blank" rel="noopener">Open live site <span aria-hidden="true">↗</span></a>
-                                         and change the rail above to LINK/ACT + "Live" (copy U1's rail). -->
-                                    <span class="btn btn-disabled" aria-disabled="true">Live site · coming soon</span>
+                                    <a class="btn btn-signal" href="https://140-238-99-64.sslip.io/auth" target="_blank" rel="noopener">Open live site <span aria-hidden="true">↗</span></a>
                                     <a class="btn btn-ghost" href="https://github.com/DiorWachira/Hybrid-AI-Powered-Matching-and-Recommendation-Engine" target="_blank" rel="noopener">Source <span aria-hidden="true">↗</span></a>
                                 </div>
                             </div>
