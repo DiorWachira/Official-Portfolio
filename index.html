@@ -282,40 +282,11 @@ Running: 3 apps live in production
                         </div>
 
                         <div class="unit-body">
-                            <figure class="unit-shot unit-diagram">
-                                <div class="diagram-frame">
-                                    <p class="diagram-title mono">Matching pipeline · schematic</p>
-                                    <svg viewBox="0 0 540 300" role="img" aria-labelledby="jb-svg-title">
-                                        <title id="jb-svg-title">Pipeline: CV and job parsing feeds a skill graph, which splits into rule filters and semantic similarity, merges into a ranking model and outputs a match. Hiring outcomes loop back to retrain the model.</title>
-                                        <path class="d-loop" d="M420 130 V240 H150 V130"/>
-                                        <g class="d-line">
-                                            <path d="M48 130 H190 L230 90 H330 L370 130 H500"/>
-                                            <path d="M190 130 L230 170 H330 L370 130"/>
-                                        </g>
-                                        <g class="d-stop">
-                                            <circle cx="48" cy="130" r="8"/>
-                                            <circle cx="150" cy="130" r="8"/>
-                                            <circle cx="280" cy="90" r="8"/>
-                                            <circle cx="280" cy="170" r="8"/>
-                                            <circle cx="420" cy="130" r="8"/>
-                                        </g>
-                                        <circle class="d-end" cx="500" cy="130" r="11"/>
-                                        <g class="d-label">
-                                            <text x="48" y="96" text-anchor="middle">Parse</text>
-                                            <text x="48" y="112" text-anchor="middle" class="d-sub">CV · JD · NLP</text>
-                                            <text x="150" y="96" text-anchor="middle">Skill graph</text>
-                                            <text x="150" y="112" text-anchor="middle" class="d-sub">Neo4j</text>
-                                            <text x="280" y="68" text-anchor="middle">Rule filters</text>
-                                            <text x="280" y="200" text-anchor="middle">Semantic match</text>
-                                            <text x="280" y="216" text-anchor="middle" class="d-sub">BERT embeddings</text>
-                                            <text x="420" y="96" text-anchor="middle">Rank</text>
-                                            <text x="420" y="112" text-anchor="middle" class="d-sub">ML model</text>
-                                            <text x="500" y="160" text-anchor="middle">Match</text>
-                                            <text x="285" y="262" text-anchor="middle" class="d-sub">Hiring outcomes retrain the model</text>
-                                        </g>
-                                    </svg>
-                                </div>
-                                <figcaption class="mono"><span>Fig. 04</span> Hybrid scoring: hard rules and semantic similarity merge before ranking.</figcaption>
+                            <figure class="unit-shot">
+                                <a href="https://140-238-99-64.sslip.io/" target="_blank" rel="noopener" class="shot-frame" tabindex="-1" aria-hidden="true">
+                                    <img src="assets/img/jobbridge-home.jpg" alt="" width="1440" height="900" loading="lazy">
+                                </a>
+                                <figcaption class="mono"><span>Fig. 04</span> JobBridge's landing page: "A better connection starts with your skills."</figcaption>
                             </figure>
 
                             <div class="unit-copy">
